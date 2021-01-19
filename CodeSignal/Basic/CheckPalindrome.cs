@@ -21,6 +21,9 @@ namespace CodeSignal.Basic
 
             //Compare if string is same
             return true && String.Equals(inputString, reversedString);
+
+            //Linq
+            //return inputString.SequenceEqual(inputString.Reverse());
         }
     }
 }

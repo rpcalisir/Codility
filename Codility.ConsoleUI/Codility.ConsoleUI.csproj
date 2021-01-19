@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BinaryGap.cs" />
-    <Compile Include="GenerateBiggestNumber.cs" />
+    <Compile Include="MaximumPossibleValue.cs" />
     <Compile Include="MaxFlavors.cs" />
     <Compile Include="NumToDigits.cs" />
     <Compile Include="Program.cs" />
