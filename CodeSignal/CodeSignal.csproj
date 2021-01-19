@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8C924147-C55F-4D40-AE36-E5D8DAD67B91}</ProjectGuid>
+    <ProjectGuid>{4041B45B-CE7B-43C2-B12B-2E5E63E1F9D7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Codility.ConsoleUI</RootNamespace>
-    <AssemblyName>Codility.ConsoleUI</AssemblyName>
+    <RootNamespace>CodeSignal</RootNamespace>
+    <AssemblyName>CodeSignal</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,21 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BinaryGap.cs" />
-    <Compile Include="GenerateBiggestNumber.cs" />
-    <Compile Include="MaxFlavors.cs" />
-    <Compile Include="NumToDigits.cs" />
+    <Compile Include="Basic\CenturyFromYear.cs" />
+    <Compile Include="Basic\CheckPalindrome.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SmallestNotContained.cs" />
-    <Compile Include="SortArray.cs" />
-    <Compile Include="TryOut.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Basic\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
