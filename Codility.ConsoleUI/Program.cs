@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Codility.ConsoleUI.Basic;
+using Codility.ConsoleUI.Demo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,37 +12,41 @@ namespace Codility.ConsoleUI
     {
         static void Main(string[] args)
         {
-            //GapFinder
+            //TryOut
+            Console.WriteLine(String.Join(",", TryOut.Solution(new int[] { 3, 8, 9, 7, 6 }, 3)));
+
+            #region Basic
+            //ArrayRotation
+            //Console.WriteLine(String.Join(",", ArrayRotation.Solution(new int[] { 3, 8, 9, 7, 6 }, 3)));
+
+            Console.WriteLine();
+            #endregion
+
+            #region Demo
+            //BinaryGap
             //Console.WriteLine(BinaryGap.GapFinder(6));
 
             //MaxFlavors
             //Console.WriteLine(MaxFlavors.Solution(new int[] {1,2,3,4}, new int[] {3,6,4,4}));
 
-            //NumberToDigits
+            //MaximumPossibleValue
+            //Console.WriteLine(MaximumPossibleValue.Solution(623,5));
+
+            //NumToDigits
             //foreach (var digit in NumToDigits.Solution(213))
             //{
             //    Console.WriteLine(digit);
             //}
 
-            //GenerateBiggestNumber
-            //Console.WriteLine(GenerateBiggestNumber.Solution(623,5));
+            //SmallestNotContained
+
 
             //SortArray
             //foreach (var element in SortArray.SortDescending(new int[] {3, 7,6, 8, 4, 9, 5, 2 }))
             //{
             //    Console.WriteLine(element);
             //}
-
-            //TryOut
-            foreach (var item in TryOut.MutateTheArray(5, new int[] { 4, 0, 1, -2, 3 }))
-            {
-                Console.WriteLine(item);
-            }
-            Console.WriteLine(TryOut.MutateTheArray(1, new int[] {9}));
-
-            //GenerateBiggestNumber
-            //Console.WriteLine(GenerateBiggestNumber.Solution(-999,4));
-
+            #endregion
 
             Console.ReadLine();
         }

@@ -22,7 +22,19 @@ namespace CodeSignal.Basic
     {
         public static int Solution(int[] statues)
         {
-            
+            Array.Sort(statues);
+            int diff = 0;
+            int necessary = 0;
+
+            for (int i = 1; i < statues.Length; i++)
+            {
+                diff = statues[i] - statues[i - 1];
+                if (diff != 1)
+                {
+                    necessary += (diff - 1);
+                }
+            }
+            return necessary;
         }
     }
 }

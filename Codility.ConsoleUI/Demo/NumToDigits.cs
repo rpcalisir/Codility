@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Codility.ConsoleUI
+namespace Codility.ConsoleUI.Demo
 {
     /// <summary>
     /// Mod 10, then divide by 10

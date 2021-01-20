@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Codility.ConsoleUI
+namespace Codility.ConsoleUI.Demo
 {
     public static class BinaryGap
     {

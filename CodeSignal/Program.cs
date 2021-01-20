@@ -13,7 +13,9 @@ namespace CodeSignal
         {
             #region BASIC
             //TRYOUT
-            Console.WriteLine(CheckPalindrome.Solution("aabaa"));
+            Console.WriteLine(TryOut.Solution(new int[] { 6, 2, 3, 8 }));
+
+
 
 
             //CenturyFromYear
@@ -31,6 +33,9 @@ namespace CodeSignal
 
             //AdjascentElementsProduct
             //Console.WriteLine(AdjascentElementsProduct.Solution(new int[] { 3, 6, -2, -5, 7, 3 }));
+
+            //MakeArrayConsecutive2
+            //Console.WriteLine(MakeArrayConsecutive2.Solution(new int[] { 6, 2, 3, 8 }));
 
 
 

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Codility.ConsoleUI
+namespace Codility.ConsoleUI.Demo
 {
     /// <summary>
     /// Write a function that returns the maximum possible value obtained by inserting any single digit inside the decimal

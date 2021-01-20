@@ -8,9 +8,20 @@ namespace CodeSignal.Basic
 {
     public static class TryOut
     {
-        public static bool Solution(string inputString)
+        public static int Solution(int[] statues)
         {
-            
+            int diff, necessary = 0;
+            Array.Sort(statues);
+
+            for (int i = 1; i < statues.Length; i++)
+            {
+                diff = statues[i] - statues[i - 1];
+                if (diff!=1)
+                {
+                    necessary += (diff - 1);
+                }
+            }
+            return necessary;
         }
     }
 }

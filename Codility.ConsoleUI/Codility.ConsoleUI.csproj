@@ -43,21 +43,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BinaryGap.cs" />
-    <Compile Include="MaximumPossibleValue.cs" />
-    <Compile Include="MaxFlavors.cs" />
-    <Compile Include="NumToDigits.cs" />
+    <Compile Include="Basic\ArrayRotation.cs" />
+    <Compile Include="Demo\BinaryGap.cs" />
+    <Compile Include="Demo\MaximumPossibleValue.cs" />
+    <Compile Include="Demo\MaxFlavors.cs" />
+    <Compile Include="Demo\NumToDigits.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SmallestNotContained.cs" />
-    <Compile Include="SortArray.cs" />
+    <Compile Include="Demo\SmallestNotContained.cs" />
+    <Compile Include="Demo\SortArray.cs" />
     <Compile Include="TryOut.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Basic\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
