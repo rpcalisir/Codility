@@ -15,11 +15,11 @@ namespace Codility.ConsoleUI
 
             //while(K>0)
             //{
-                stack.Push(queue.Dequeue());
-                queue.Enqueue(stack.Pop());
-                //K--;
+            //stack.Push(queue.Dequeue());
+            //queue.Enqueue(stack.Pop());
+            //K--;
             //}
-
+            queue.Dequeue();
             return queue.ToArray();
         }
     }

@@ -69,7 +69,25 @@ namespace Codility.ConsoleUI.Basic
         /// After one iteration
         /// 8 9 7 6 3 
         /// 
-        /// Basically it brings the first element of the array to the last
+        /// Basically it brings the first element of the array to the last.
+        /// 
+        /// 
+        /// 3 8 9 7 6
+        /// Queue
+        /// --------------------
+        /// 67983
+        /// --------------------
+        /// queue.ToArray() -> 38976
+        /// 
+        /// 
+        /// 3 8 9 7 6
+        /// Queue
+        /// --------------------
+        /// 67983
+        /// --------------------
+        /// queue.Dequeue() -> ilk giren, 3 silinir
+        /// queue.ToArray() -> 8976
+        /// 
         /// </summary>
         /// <param name="A"></param>
         /// <param name="K"></param>
