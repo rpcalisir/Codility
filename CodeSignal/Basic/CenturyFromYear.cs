@@ -6,6 +6,18 @@ using System.Threading.Tasks;
 
 namespace CodeSignal.Basic
 {
+    /// <summary>
+    /// Find the centure from a given year between 1 and 3000
+    /// 
+    /// 
+    /// 
+    /// 
+    /// 
+    /// 
+    /// 
+    /// 
+    /// //1700 -> 17  1792 -! 18
+    /// </summary>
     public static class CenturyFromYear
     {
         public static int Solution(int year)

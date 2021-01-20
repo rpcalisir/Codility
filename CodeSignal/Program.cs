@@ -12,8 +12,12 @@ namespace CodeSignal
         static void Main(string[] args)
         {
             #region BASIC
+            //TRYOUT
+            Console.WriteLine(CheckPalindrome.Solution("aabaa"));
+
+
             //CenturyFromYear
-            //Console.WriteLine(CenturyFromYear.Solution(1));
+            //Console.WriteLine(CenturyFromYear.Solution(1700));
 
             //MutateTheArray
             //foreach (var item in MutateTheArray.Solution(4,new int[] {4,1,2,3}))
@@ -26,7 +30,9 @@ namespace CodeSignal
             //Console.WriteLine(CheckPalindrome.Solution("aabaa"));
 
             //AdjascentElementsProduct
-            Console.WriteLine(AdjascentElementsProduct.Solution(new int[] { 3, 6, -2, -5, 7, 3 }));
+            //Console.WriteLine(AdjascentElementsProduct.Solution(new int[] { 3, 6, -2, -5, 7, 3 }));
+
+
 
             Console.ReadLine();
             #endregion

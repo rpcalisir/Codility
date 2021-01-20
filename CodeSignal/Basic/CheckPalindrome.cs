@@ -6,6 +6,17 @@ using System.Threading.Tasks;
 
 namespace CodeSignal.Basic
 {
+    /// <summary>
+    /// Check if a given string is a palindrome
+    /// 
+    /// 
+    /// 
+    /// 
+    /// 
+    /// 
+    /// 
+    /// 
+    /// </summary>
     public static class CheckPalindrome
     {
         public static bool Solution(string inputString)

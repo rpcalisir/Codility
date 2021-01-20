@@ -46,7 +46,9 @@
     <Compile Include="Basic\AdjascentElementsProduct.cs" />
     <Compile Include="Basic\CenturyFromYear.cs" />
     <Compile Include="Basic\CheckPalindrome.cs" />
+    <Compile Include="Basic\MakeArrayConsecutive2.cs" />
     <Compile Include="Basic\MutateTheArray.cs" />
+    <Compile Include="Basic\TryOut.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
