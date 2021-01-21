@@ -27,48 +27,49 @@ namespace Codility.ConsoleUI.Demo
     /// </summary>
     public static class MaxFlavors
     {
+        /// <summary>
+        /// - Create empty spots array with substracting Juice from Capacity
+        /// - Brute force through each empty spot with adding all juice elements into it;
+        /// except same index because there is already a juice type in there
+        /// - If sum doesn't exceed the amount of empty spot, then add that juice into it and increase count by 1
+        /// - If sum exceeds the amount of empty spot, then substract that added juice and decrease count by 1
+        /// - Replace max with each number at the end of iteration if it's bigger than before 
+        /// - Return +1 with max because there is already a juice in each spot
+        /// </summary>
+        /// <param name="juice"></param>
+        /// <param name="capacity"></param>
+        /// <returns></returns>
         public static int Solution(int[] juice, int[] capacity)
         {
             //TODO find a more clever solution
-            return 0;
-            //MY answer
-            //int[] emptySpots = new int[juice.Length];
-            //int subTotal = 0;
-            //int flavorCount = 1;
-
-            //int tempMax = 0;
-
-            //for (int i = 0; i < capacity.Length; i++)
-            //{
-            //    emptySpots[i] = capacity[i] - juice[i];
-            //}
-            //for (int e = 0; e < emptySpots.Length; e++)
-            //{
-            //    for (int j = 0; j < juice.Length; j++)
-            //    {
-            //        if (j==e)
-            //        {
-            //            continue;
-            //        }
-            //        subTotal += juice[j];
-
-            //        if (subTotal <= emptySpots[e])
-            //        {
-            //            flavorCount++;
-            //        }
-            //        else
-            //        {
-            //            subTotal -= juice[j];
-            //        }
-            //        if (flavorCount > tempMax)
-            //        {
-            //            tempMax = flavorCount;
-            //        }
-            //    }
-            //    subTotal = 0;
-            //    flavorCount = 1;
-            //}
-            //return tempMax;
+            //My solution
+            int[] empty = new int[juice.Length];
+            for (int i = 0; i < juice.Length; i++)
+            {
+                empty[i] = capacity[i] - juice[i];
+            }
+            int counter = 0, sum = 0, max = 0;
+            for (int e = 0; e < empty.Length; e++)
+            {
+                for (int j = 0; j < juice.Length; j++)
+                {
+                    if (e != j)
+                    {
+                        sum = sum + juice[j];
+                        counter++;
+                    }
+                    if (sum > empty[e])
+                    {
+                        sum -= juice[j];
+                        counter--;
+                    }
+                }
+                if (counter > max)
+                    max = counter;
+                sum = 0;
+                counter = 0;
+            }
+            return max + 1;
         }
     }
 }

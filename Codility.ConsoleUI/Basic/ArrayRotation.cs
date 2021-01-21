@@ -103,7 +103,6 @@ namespace Codility.ConsoleUI.Basic
                 queue.Enqueue(stack.Pop());
                 K--;
             }
-
             return queue.ToArray();
         }
     }

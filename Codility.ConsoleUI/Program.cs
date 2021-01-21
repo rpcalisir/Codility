@@ -13,13 +13,14 @@ namespace Codility.ConsoleUI
         static void Main(string[] args)
         {
             //TryOut
-            Console.WriteLine(String.Join(",", TryOut.Solution(new int[] { 3, 8, 9, 7, 6 }, 3)));
+            //Console.WriteLine(String.Join(",", TryOut.Solution(new int[] { 9,3,9,3,9,7,9 })));
 
             #region Basic
             //ArrayRotation
             //Console.WriteLine(String.Join(",", ArrayRotation.Solution(new int[] { 3, 8, 9, 7, 6 }, 3)));
 
-            Console.WriteLine();
+            //OddNumberInArray
+            //Console.WriteLine(OddNumberInArray.Solution(new int[] { 9, 3, 9, 3, 9, 7, 9 }));
             #endregion
 
             #region Demo

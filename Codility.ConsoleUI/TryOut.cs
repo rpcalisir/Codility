@@ -6,21 +6,14 @@ using System.Threading.Tasks;
 
 namespace Codility.ConsoleUI
 {
+    /// <summary>
+    ///Startindex(i++)'ten başlayarak dizinin sonuna kadar n'i arar, ilk gördüğü index'i döndürür, bulamazsa -1 döndürür.
+    /// </summary>
     public static class TryOut
     {
-        public static int[] Solution(int[] A, int K)
+        public static int Solution(int[] A)
         {
-            Queue<int> queue = new Queue<int>(A);
-            Stack<int> stack = new Stack<int>();
-
-            //while(K>0)
-            //{
-            //stack.Push(queue.Dequeue());
-            //queue.Enqueue(stack.Pop());
-            //K--;
-            //}
-            queue.Dequeue();
-            return queue.ToArray();
+            
         }
     }
 }
