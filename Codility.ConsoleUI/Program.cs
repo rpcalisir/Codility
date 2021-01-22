@@ -13,7 +13,9 @@ namespace Codility.ConsoleUI
         static void Main(string[] args)
         {
             //TryOut
-            //Console.WriteLine(String.Join(",", TryOut.Solution(new int[] { 9,3,9,3,9,7,9 })));
+            Console.WriteLine(String.Join(",", TryOut.Solution(new int[] { 1,3,1,4,2,3,5,4},5)));
+
+            //Console.WriteLine(TryOut.Pre(21));
 
             #region Basic
             //ArrayRotation

@@ -44,7 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Basic\ArrayRotation.cs" />
+    <Compile Include="Basic\FrogRiverOne.cs" />
     <Compile Include="Basic\OddNumberInArray.cs" />
+    <Compile Include="Basic\PermMissingElement.cs" />
+    <Compile Include="Basic\TapeEquilibrium.cs" />
     <Compile Include="Demo\BinaryGap.cs" />
     <Compile Include="Demo\MaximumPossibleValue.cs" />
     <Compile Include="Demo\MaxFlavors.cs" />
