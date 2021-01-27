@@ -44,11 +44,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Basic\ArrayRotation.cs" />
+    <Compile Include="Basic\MaxProductOfThree.cs" />
+    <Compile Include="Basic\DistinctValuesInArray.cs" />
+    <Compile Include="Basic\NumberOfDiscIntersections.cs" />
+    <Compile Include="Basic\PassingCars.cs" />
+    <Compile Include="Basic\MinAvgTwoSlice.cs" />
+    <Compile Include="Basic\GenomicRangeQuery.cs" />
     <Compile Include="Basic\FrogRiverOne.cs" />
+    <Compile Include="Basic\MaxCounters.cs" />
+    <Compile Include="Basic\MostFrequentElement.cs" />
     <Compile Include="Basic\OddNumberInArray.cs" />
     <Compile Include="Basic\PermMissingElement.cs" />
+    <Compile Include="Basic\ProperlyNestedString.cs" />
     <Compile Include="Basic\TapeEquilibrium.cs" />
+    <Compile Include="Challenges\RectangleStrip.cs" />
     <Compile Include="Demo\BinaryGap.cs" />
+    <Compile Include="Demo\FindMultiplesInRange.cs" />
     <Compile Include="Demo\MaximumPossibleValue.cs" />
     <Compile Include="Demo\MaxFlavors.cs" />
     <Compile Include="Demo\NumToDigits.cs" />

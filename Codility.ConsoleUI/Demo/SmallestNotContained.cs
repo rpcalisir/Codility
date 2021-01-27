@@ -38,21 +38,34 @@ namespace Codility.ConsoleUI.Demo
             //var i = 0;
             //return A.Where(a => a > 0).Distinct().OrderBy(a => a).Any(a => a != (i = i + 1)) ? i : i + 1;
 
-            //My Solution
-            int result = 1;
+            //My latest solution %100
+            if (A.Max() < 0)
+                return 1;
+            Array.Sort(A);
 
+            int flag = 1;
             for (int i = 0; i < A.Length; i++)
             {
-                if (A[i]<0)
-                {
-                    continue;
-                }
-                if (A.Contains(result))
-                {
-                    result++;
-                }
+                if (A[i] == flag)
+                    flag++;
             }
-            return result;
+            return flag;
+
+            //My old Solution
+            //int result = 1;
+
+            //for (int i = 0; i < A.Length; i++)
+            //{
+            //    if (A[i]<0)
+            //    {
+            //        continue;
+            //    }
+            //    if (A.Contains(result))
+            //    {
+            //        result++;
+            //    }
+            //}
+            //return result;
         }
     }
 }

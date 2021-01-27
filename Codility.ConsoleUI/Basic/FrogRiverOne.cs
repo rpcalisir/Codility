@@ -53,7 +53,7 @@ namespace Codility.ConsoleUI.Basic
         /// A[6]  = 5
         /// A[7]  = 4
         /// 
-        /// if d[A[i]==0]
+        /// if d[A[i]]==0
         ///     d[A[i]]= A[i]
         ///     c++
         /// 
@@ -77,6 +77,19 @@ namespace Codility.ConsoleUI.Basic
         /// i= 1 d[A[i]] demek, d[A[1]] => d[3] = A[1] = 3 demek 3.pozisyona ilk defa 1.saniyede düştü demek(A[1]'in içindeki 1)
         /// i= 2 d[A[i]] demek, d[A[2]] => d[1] = A[2] = 1 demek 1. pozisyona 2. saniyede tekrar düştü, fakat daha önce düşmüştü ve zıplanmıştı.
         /// i= 3 d[A[i]] demek, d[A[3]] => d[4] = A[3] = 3 demek 3. saniyede 4. pozisyona düştü, bu pozisyon boşsa ilk defa düşmüştür, zıpla
+        /// 
+        /// 
+        /// i= 1 d[A[i]] demek, d[A[1]] => d[3] = A[1] = 3 
+        /// A-for(int i=0;i<A.Length;i++)
+        /// B-if d[A[i]]==0
+        /// C-  d[A[i]]= A[i]
+        /// D-  jump++
+        /// A- Bütün saniyelere bak 
+        /// B- i=1 için; 1. saniyede 3. pozisyona ilk defa mı düştü?
+        /// C- 3. pozisyona 1. saniyede hangi pozisyona(3) düştüğünü at
+        /// D- zıpla
+        /// 
+        /// *A dizisi hangi saniyede hangi pozisyona yaprak düştüğünü tutar.
         /// </summary>
         /// <param name="X"></param>
         /// <param name="A"></param>

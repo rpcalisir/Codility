@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Codility.ConsoleUI.Demo
 {
-    /// <summary>
+    /// <summary> 
     /// Rick is really fond of fruit juices, but he is bored of their traditional flavours. Therefore, he has decided to mix as many of them as possible to obtain something entirely new as a result.
     ///He has N glasses, numbered from 0 to N-1, each containing a different kind of juice.The J-th glass has capacity[J] units of capacity and contains juice[J] units of juice.In each glass there is at least one unit of juice.
     ///Rick want to create a multivitamin mix in one of the glasses. He is going to do it by pouring juice from several other glasses into the chosen one. Each of the used glasses must be empty at the end (all of the juice from each glass has to be poured out).
@@ -44,32 +44,32 @@ namespace Codility.ConsoleUI.Demo
             //TODO find a more clever solution
             //My solution
             int[] empty = new int[juice.Length];
-            for (int i = 0; i < juice.Length; i++)
-            {
-                empty[i] = capacity[i] - juice[i];
-            }
-            int counter = 0, sum = 0, max = 0;
+
+            for (int s = 0; s < capacity.Length; s++)
+                empty[s] = capacity[s] - juice[s];
+
+            int sum = 0, flavors = 1, max = int.MinValue;
             for (int e = 0; e < empty.Length; e++)
             {
                 for (int j = 0; j < juice.Length; j++)
                 {
-                    if (e != j)
-                    {
-                        sum = sum + juice[j];
-                        counter++;
-                    }
+                    if (e == j)
+                        continue;
+
+                    sum += juice[j];
+                    flavors++;
                     if (sum > empty[e])
                     {
                         sum -= juice[j];
-                        counter--;
+                        flavors--;
                     }
+                    if (flavors > max)
+                        max = flavors;
                 }
-                if (counter > max)
-                    max = counter;
                 sum = 0;
-                counter = 0;
+                flavors = 1;
             }
-            return max + 1;
+            return max;
         }
     }
 }

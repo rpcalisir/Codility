@@ -29,6 +29,29 @@ namespace Codility.ConsoleUI.Basic
     {
         public static int Solution(int[] arr)
         {
+            //My Way Dictionary
+            //Dictionary<int, int> elementCounts = new Dictionary<int, int>();
+
+            //int counter = 0;
+            //for (int i = 0; i < A.Length; i++)
+            //{
+            //    if (!elementCounts.ContainsKey(A[i]))
+            //    {
+            //        elementCounts.Add(A[i], 1);
+            //    }
+            //    else
+            //    {
+            //        counter = elementCounts[A[i]];
+            //        counter++;
+            //        elementCounts[A[i]] = counter;
+            //    }
+            //}
+            //int result = -1;
+            //foreach (var pair in elementCounts)
+            //    if (pair.Value % 2 == 1)
+            //        result = pair.Key;
+            //return result;
+
             //PAIR TRACKING
             //List<int> odd = new List<int>();
             //for (int i = 0; i <= arr.GetUpperBound(0); i++)

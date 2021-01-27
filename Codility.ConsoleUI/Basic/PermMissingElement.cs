@@ -43,6 +43,20 @@ namespace Codility.ConsoleUI.Basic
             //        result = flag + 1;
             //}
             //return result;
+
+            //My solution Second Attempt (%100)
+            //int flag = 1;
+            //Array.Sort(A);
+            //int result;
+            //for (int i = 0; i <= A.GetUpperBound(0); i++)
+            //{
+            //    if (A[i] == flag)
+            //        flag++;
+            //    else
+            //        result = flag;
+            //}
+            //return flag;
+
         }
     }
 }
