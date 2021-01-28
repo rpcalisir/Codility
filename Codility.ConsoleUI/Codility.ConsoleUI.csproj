@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Basic\ArrayRotation.cs" />
+    <Compile Include="Basic\Fish.cs" />
     <Compile Include="Basic\MaxProductOfThree.cs" />
     <Compile Include="Basic\DistinctValuesInArray.cs" />
     <Compile Include="Basic\NumberOfDiscIntersections.cs" />

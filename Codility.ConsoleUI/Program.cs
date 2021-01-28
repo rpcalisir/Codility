@@ -24,6 +24,9 @@ namespace Codility.ConsoleUI
             //DistinctValuesInArray
             //Console.WriteLine(DistinctValuesInArray.Solution(new int[] { 2, 1, 1, 2, 3, 1 }));
 
+            //Fish
+            //Console.WriteLine(Fish.Solution(new int[] { 4,3,2,1,5 }, new int[] { 0,1,0,0,0 }));
+
             //OddNumberInArray
             //Console.WriteLine(OddNumberInArray.Solution(new int[] { 9, 3, 9, 3, 9, 7, 9 }));
 
