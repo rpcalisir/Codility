@@ -42,6 +42,9 @@ namespace Codility.ConsoleUI
             //MostFrequentElement
             //Console.WriteLine(MostFrequentElement.Solution(new int[] {1,2,5,2,4,3,3,2,9 }));
 
+            //Nesting
+            Console.WriteLine(Nesting.Solution());
+
             //NumberOfDiscIntersections
             //Console.WriteLine(NumberOfDiscIntersections.Solution(new int[] {1,5,2,1,4,0}));
 
